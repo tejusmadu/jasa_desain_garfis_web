@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registrasi</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-         body {
+        body {
             background-image: url('{{ asset("image/logo2.jpg") }}');
             background-size: cover;
             background-position: center;
@@ -21,6 +21,8 @@
             background-color: rgba(255, 255, 255, 0.5);
             padding: 20px;
             border-radius: 10px;
+            width: 50%;
+            max-width: 600px; /* Adjust the max-width as needed */
         }
 
         .centered-form {
@@ -37,49 +39,38 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#" style="position: absolute; left: 50%; transform: translateX(-50%);"></a>
-    </nav>
-
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-4 centered-form">
+            <div class="col-md-8 centered-form"> <!-- Adjusted the column width -->
                 <div class="text-center">
                 </div>
                 <div class="form-container">
-                    <form method="POST" action="{{ route('login.submit') }}">
+                    <form method="POST" action="{{ route('register.submit') }}">
                         @csrf
                         <div class="form-group">
-                            <label for="name">Username:</label>
-                            <input type="name" class="form-control" id="name" name="name" value="{{ old('name') }}" required>
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Password:</label>
                             <input type="password" class="form-control" id="password" name="password" required>
                         </div>
-
                         <div class="form-group">
-                            <label for="role">Login As:</label>
-                            <select class="form-control" name="role" id="role" required>
-                                <option value="user">User</option>
-                                <option value="admin">Admin</option>
-                            </select>
+                            <label for="password_confirmation">Confirm Password:</label>
+                            <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
                         </div>
                         <div class="btn-center">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-primary">Register</button>
                         </div>
                     </form>
-                    <p style="text-align: center; margin-top: 20px;">Belum punya akun sebagai user? Silakan <a href="{{ route('register') }}">registrasi</a> terlebih dahulu.</p>
-                    <!-- Tambahkan di dalam form atau di tempat yang sesuai -->
-                    @if(session('error'))
-                        <div class="alert alert-danger">
-                            {{ session('error') }}
-                        </div>
-                    @endif
+                    <p style="text-align: center; margin-top: 20px;">Sudah punya akun? Silakan <a href="login">login</a>.</p>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-

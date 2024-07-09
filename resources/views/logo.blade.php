@@ -16,7 +16,6 @@
             object-fit: cover;
             height: 150px; /* Mengurangi tinggi gambar */
         }
-
         /* Custom styles */
         body {
             padding-top: 60px;
@@ -70,10 +69,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="home"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index"><i class="fas fa-cogs"></i> Services</a>
+            <a class="nav-link" href="home"><i class="fas fa-cogs"></i> Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Pesan</a>
@@ -81,138 +80,19 @@
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Keranjang</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> Profil</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <img src="{{ asset('image/logo.jpg') }}" class="card-img-top" alt="Desain Logo">
-                <div class="card-body">
-                    <h5 class="card-title">Logo pandawa</h5>
-                    <p class="card-text">-</p>
-                    <p class="card-text"><strong>Price: $99.99</strong></p>
-                    <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="decrement()">-</button>
-                        <input type="text" class="form-control text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="quantity" value="1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="increment()">+</button>
-                    </div>
-                    <a href="#" class="btn btn-info mt-2"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</a>
-                </div>
-            </div>
-        </div>
-        <!-- Second Card -->
-        <div class="col-md-4">
-            <div class="card">
-                <img src="{{ asset('image/logo.jpg') }}" class="card-img-top" alt="Desain Logo">
-                <div class="card-body">
-                    <h5 class="card-title">Logo pandawa</h5>
-                    <p class="card-text">-</p>
-                    <p class="card-text"><strong>Price: $99.99</strong></p>
-                    <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="decrement()">-</button>
-                        <input type="text" class="form-control text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="quantity" value="1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="increment()">+</button>
-                    </div>
-                    <a href="#" class="btn btn-info mt-2"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</a>
-                </div>
-            </div>
-        </div>
-           <!-- Third Card -->
-           <div class="col-md-4">
-            <div class="card">
-                <img src="{{ asset('image/logo.jpg') }}" class="card-img-top" alt="Desain Logo">
-                <div class="card-body">
-                    <h5 class="card-title">Logo pandawa</h5>
-                    <p class="card-text">-</p>
-                    <p class="card-text"><strong>Price: $99.99</strong></p>
-                    <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="decrement()">-</button>
-                        <input type="text" class="form-control text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="quantity" value="1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="increment()">+</button>
-                    </div>
-                    <a href="#" class="btn btn-info mt-2"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</a>
-                </div>
-            </div>
-        </div>
-        <!-- Fourth Card -->
-        <div class="col-md-4">
-            <div class="card">
-                <img src="{{ asset('image/logo.jpg') }}" class="card-img-top" alt="Desain Logo">
-                <div class="card-body">
-                    <h5 class="card-title">Logo pandawa</h5>
-                    <p class="card-text">-</p>
-                    <p class="card-text"><strong>Price: $99.99</strong></p>
-                    <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="decrement()">-</button>
-                        <input type="text" class="form-control text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="quantity" value="1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="increment()">+</button>
-                    </div>
-                    <a href="#" class="btn btn-info mt-2"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</a>
-                </div>
-            </div>
-        </div>
-        <!-- Fifth Card -->
-        <div class="col-md-4">
-            <div class="card">
-                <img src="{{ asset('image/logo.jpg') }}" class="card-img-top" alt="Desain Logo">
-                <div class="card-body">
-                    <h5 class="card-title">Logo pandawa</h5>
-                    <p class="card-text">-</p>
-                    <p class="card-text"><strong>Price: $99.99</strong></p>
-                    <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="decrement()">-</button>
-                        <input type="text" class="form-control text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="quantity" value="1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="increment()">+</button>
-                    </div>
-                    <a href="#" class="btn btn-info mt-2"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</a>
-                </div>
-            </div>
-        </div>
-        <!-- Third Card -->
-        <div class="col-md-4">
-            <div class="card">
-                <img src="{{ asset('image/logo.jpg') }}" class="card-img-top" alt="Desain Logo">
-                <div class="card-body">
-                    <h5 class="card-title">Logo pandawa</h5>
-                    <p class="card-text">-</p>
-                    <p class="card-text"><strong>Price: $99.99</strong></p>
-                    <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="decrement()">-</button>
-                        <input type="text" class="form-control text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="quantity" value="1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="increment()">+</button>
-                    </div>
-                    <a href="#" class="btn btn-info mt-2"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</a>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</div>
-
-
+ 
 <footer class="bg-dark text-white text-center py-2">
     <div class="container">
         <p>&copy; RZ7 2024 </p>
     </div>
 </footer>
-
-<script>
-    function increment() {
-        let quantityInput = document.getElementById('quantity');
-        let currentValue = parseInt(quantityInput.value);
-        quantityInput.value = currentValue + 1;
-    }
-
-    function decrement() {
-        let quantityInput = document.getElementById('quantity');
-        let currentValue = parseInt(quantityInput.value);
-        if (currentValue > 1) {
-            quantityInput.value = currentValue - 1;
-        }
-    }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

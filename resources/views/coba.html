@@ -1,0 +1,230 @@
+informasi tim mau di rubah ke nama produk 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pandawa</title>
+    <style>
+        /* Add your custom styles here */
+
+        /* Animasi fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Tambahkan animasi pada elemen yang ingin di-animasikan */
+        .animated-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Latar belakang untuk bagian "Kontak Sosial Media" */
+        .social-media-section {
+            background: #e1dada;
+            color: rgb(54, 49, 49);
+            padding: 20px 0;
+        }
+
+        /* Ganti warna teks agar terlihat pada latar belakang */
+        .social-media-section a {
+            color: white;
+        }
+
+        /* Navbar style */
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(to right, rgba(239, 232, 232, 0.8), rgba(255, 255, 255, 0.8)); /* Gradien warna latar belakang navbar */
+            border-bottom: 2px solid #ffffff; /* Garis bawah navbar */
+            transition: background-color 0.3s; /* Efek transisi warna latar belakang navbar */
+        }
+
+        .navbar-brand {
+            color: #ffffff; /* Warna teks navbar */
+            font-size: 24px; /* Ukuran font teks navbar */
+            font-weight: bold; /* Ketebalan font teks navbar */
+            transition: color 0.3s; /* Efek transisi warna teks navbar */
+        }
+
+        .navbar-toggler {
+            border-color: #ffffff; /* Warna border tombol toggler pada mode collapse */
+            transition: transform 0.3s ease-in-out; /* Efek transisi rotasi tombol toggler */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff; /* Warna ikon toggler pada mode collapse */
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            transform: rotate(90deg); /* Rotasi ikon toggler saat navbar terbuka */
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px; /* Margin antara item navbar */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff; /* Warna teks menu navbar */
+            font-weight: bold; /* Ketebalan font teks menu navbar */
+            transition: color 0.3s; /* Efek transisi warna teks menu navbar */
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #ffcc00; /* Warna teks menu navbar saat dihover atau aktif */
+        }
+
+        /* Hover effect on Navbar */
+        .navbar:hover {
+            background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); /* Gradien warna latar belakang navbar saat dihover */
+        }
+
+        .navbar:hover .navbar-brand {
+            color: #292828; /* Warna teks navbar saat dihover */
+        }
+
+        .navbar:hover .navbar-nav .nav-link {
+            color: #131313; /* Warna teks menu navbar saat dihover */
+        }
+
+
+        /* Main section style */
+        .main-section {
+            margin-top: 20px;
+            background-color: #fff; /* Tambahkan warna latar belakang formulir */
+            padding: 20px; /* Tambahkan padding untuk meningkatkan ruang di sekitar formulir */
+            border-radius: 10px; /* Tambahkan sudut melengkung pada formulir */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk memberikan kedalaman */
+        }
+
+        /* Footer style */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Background image */
+        body {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #495057; /* Atur warna teks untuk visibilitas yang lebih baik pada gambar latar belakang */
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 60px; /* Tambahkan margin-bottom untuk memberi ruang di bagian bawah */
+        }
+
+        /* Adjust card size */
+        .card {
+            max-width: 300px;
+            margin: 0 auto;
+            cursor: pointer; /* Menambahkan pointer saat kursor berada di atas kartu */
+        }
+
+        /* Adjust card image size */
+        .card img {
+            height: 200px;
+            object-fit: cover;
+    }
+        .text-center {
+         text-align: center;
+         font-size: 30px; /* Sesuaikan ukuran font sesuai kebutuhan Anda */
+         margin:  50px;
+       }
+           /* Adjust card size */
+           .card {
+            max-width: 300px;
+            margin: 0 auto;
+            cursor: pointer; /* Menambahkan pointer saat kursor berada di atas kartu */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek shadow */
+       }
+
+        /* Adjust card image size */
+           .card img {
+            height: 200px;
+             object-fit: cover;
+     }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home">Pandawa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="informasi">Booking Tim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="informasitim">Informasi Tim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="create">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h2 class="text-center">Anggota Tim</h2>
+        <div class="row">
+            @foreach($images as $image)
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" data-toggle="modal" data-target="#imageModal{{ $loop->index }}">
+                        <img src="{{ asset($image->image_path) }}" class="card-img-top" alt="{{ $image->title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $image->title }}</h5>
+                            <p class="card-text">{{ $image->description }}</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="imageModal{{ $loop->index }}" tabindex="-1" role="dialog"
+                        aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">{{ $image->title }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="{{ asset($image->image_path) }}" class="img-fluid"
+                                        alt="{{ $image->title }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
